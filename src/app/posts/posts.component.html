@@ -1,0 +1,13 @@
+<p class="text-center">Posts (pulsa sobre el botón para ocultar)</p>
+
+<div class="d-flex flex-row flex-wrap justify-content-around">
+<div class="card my-2" style="width: 18rem;" *ngFor="let dato of datos">
+  <div class="card-body">
+    <h5 class="card-title">{{dato.id}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{dato.title}}</h6>
+    <p class="card-text">{{dato.body}}</p>
+  </div>
+</div>
+</div>
+
+<app-datosjson [datos]="datos"></app-datosjson>

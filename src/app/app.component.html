@@ -1,0 +1,15 @@
+<header class="d-flex justify-content-center">
+  <figure class="figure">
+  <img src="{{foto}}" class="figure-img rounded img-thumbnail mx-auto d-block"  alt="{{alt}}">
+  <figcaption class="figure-caption">{{alt}}</figcaption>
+</figure>
+</header>
+<nav class="d-flex justify-content-center">
+<button type="button" (click)="verComments()" [disabled]="visiblePosts" class="btn btn-info m-1">Comments</button> 
+<button type="button" (click)="verPosts()" [disabled]="visibleComments" class="btn btn-info m-1">Posts</button> 
+</nav>
+<main class="container">
+<app-comentarios *ngIf="visibleComments" [datos]="datos"></app-comentarios>
+<app-posts *ngIf="visiblePosts" [datos]="datos"></app-posts>
+</main>
+

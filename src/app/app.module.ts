@@ -8,11 +8,11 @@ import { ConfigService } from './config.service';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { PostsComponent } from './posts/posts.component';
 import { DatosjsonComponent } from './datosjson/datosjson.component';
-
+import { PostItemComponent } from './posts/post-item/post-item.component';
 
 @NgModule({
   imports:      [ BrowserModule, HttpClientModule, FormsModule ],
-  declarations: [ AppComponent, ComentariosComponent, PostsComponent, DatosjsonComponent],
+  declarations: [ AppComponent, ComentariosComponent, PostsComponent, DatosjsonComponent, PostItemComponent],
   bootstrap:    [ AppComponent ],
   providers: [ConfigService]
 })

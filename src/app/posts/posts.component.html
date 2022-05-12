@@ -1,5 +1,6 @@
 <p class="text-center">Posts (pulsa sobre el botón para ocultar)</p>
 
-<app-post-item class="card my-2" style="width: 18rem;" *ngFor="let dato of datos" [dato]="dato"></app-post-item>
-
+<div class="d-flex flex-wrap justify-content-center">
+<app-post-item *ngFor="let dato of datos" [dato]="dato"  ></app-post-item>
+</div>
 <app-datosjson [datos]="datos"></app-datosjson>
